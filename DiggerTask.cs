@@ -38,8 +38,7 @@ namespace Digger
 
         public bool DeadInConflict(ICreature conflictedObject)
         {
-            return (conflictedObject is Sack || conflictedObject is Monster) ?
-                true : false;
+            return conflictedObject is Sack || conflictedObject is Monster;
         }
 
         public int GetDrawingPriority()
@@ -322,7 +321,7 @@ namespace Digger
 
         public bool DeadInConflict(ICreature conflictedObject)
         {
-            return (conflictedObject is Sack || conflictedObject is Monster) ? true : false;
+            return conflictedObject is Sack || conflictedObject is Monster;
         }
 
         public int GetDrawingPriority()
